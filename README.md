@@ -8,7 +8,7 @@ I have implemented all features mentionned in the text that is sent before.<br>
 
 After starting this application which is the application in question, we will have
 3 files in the **logging** folder:
-- `info_logging.log' it's just an additional file to log information log events as progress reports and others.<br>
+- `info_logging.log` it's just an additional file to log information log events as progress reports and others.<br>
 - `debug_state_logging.log` which log the most required logs : 
   - If there is no data during one minute
   - If new data arrives
@@ -17,6 +17,7 @@ After starting this application which is the application in question, we will ha
   - Additionally, when a **Keep Alive** timer is expired
 - `debug_monitor_logging.log` which log a new reestablished connection after fail **if** `monitor` parameter
 is set to `true`.<br>
+<a\>
 As required, the interval between a closed connection and a new one can't be less than 10 seconds to avoid spams.<br>
 The `host`, `port` and `monitor` variables are passed as environment variables, you can check them
 [here]
@@ -24,7 +25,7 @@ The `host`, `port` and `monitor` variables are passed as environment variables, 
 # Example
 
 ```
-%% On a separated terminal 
+%% On a separate terminal 
 git clone https://github.com/AbdelghaniMohammed/test_client.git
 cd test_client
 rebar3 shell
@@ -43,7 +44,7 @@ test_server:send_data("hello").
 %% We can check in debug_state_logging.log the receive of binary data
 %% If we don't receive anything from the server within one minute, we will have a log of that in debug_state_logging.log
 %% Each 1 minute without receiving anything from the server results in a log 
-%% If we don't receive anything from the server within the **Keep Alive** timer, the connection is considered expired and will be closed
+%% If we don't receive anything from the server within the Keep Alive timer, the connection is considered expired and will be closed
 %% When a connection is closed for any reason, the gen_statem will try to reconnect immediately
 %% When the monitor parameter is true, and the connection is reestablished after fail, then we will have a separated log in debug_monitor_logging.log
 
