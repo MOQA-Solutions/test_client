@@ -17,8 +17,8 @@ After starting this application which is the application in question, we will ha
   - Additionally, when a **Keep Alive** timer is expired
 - `debug_monitor_logging.log` which log a new reestablished connection after fail **if** `monitor` parameter
 is set to `true`.<br>
-<a/>
-As `required`, the interval between a closed connection and a new one can't be less than 10 seconds to avoid spams.<br>
+[//]: #
+As required, the interval between a closed connection and a new one can't be less than 10 seconds to avoid spams.<br>
 The `host` and `port` and `monitor` variables are given as environment variables, you can check them
 [here]
 
