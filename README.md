@@ -20,7 +20,7 @@ is set to `true`.<br>
 <!-- end -->
 As required, the interval between a closed connection and a new one can't be less than 10 seconds to avoid spams.<br>
 The `host` and `port` and `monitor` variables are given as environment variables, you can check them
-[here]
+[here](https://github.com/AbdelghaniMohammed/test_client/blob/master/ebin/test_client.app)
 
 # Example
 
