@@ -19,7 +19,7 @@ After starting this application which is the application in question, we will ha
 is set to `true`.<br>
 <a/>
 As required, the interval between a closed connection and a new one can't be less than 10 seconds to avoid spams.<br>
-The `host`, `port` and `monitor` variables are passed as environment variables, you can check them
+The `host` and `port` and `monitor` variables are given as environment variables, you can check them
 [here]
 
 # Example
