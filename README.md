@@ -17,7 +17,7 @@ After starting this application which is the application in question, we will ha
   - Additionally, when a **Keep Alive** timer is expired
 - `debug_monitor_logging.log` which log a new reestablished connection after fail **if** `monitor` parameter
 is set to `true`.<br>
-<a\>
+<a/>
 As required, the interval between a closed connection and a new one can't be less than 10 seconds to avoid spams.<br>
 The `host`, `port` and `monitor` variables are passed as environment variables, you can check them
 [here]
@@ -34,6 +34,7 @@ rebar3 shell
 %% The customized supervisor will control their restarts rate 
 %% The gen_statem worker will try to connect once in 10 seconds
 %% You can check log reports in debug_state_logging.log
+%% Of course we can start the server side first to connect directly when starting the client
 %% Now we will start the server side on another terminal from the same machine(host is localhost)
 git clone https://github.com/AbdelghaniMohammed/test_server.git
 cd test_server

@@ -1,6 +1,6 @@
 -record (data , {
 
-	connection_data :: {pid() , atom() | string() , pos_integer},
+	connection_data :: {pid() , atom() | string() , pos_integer()},
 	
 	host :: string(),
 	
